@@ -11,7 +11,14 @@
 
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+
+}
+
 header{
+    min-width: 300px;
     padding: 50px 0px 50px 0px ;
     background-color: black;
     text-align: center;
@@ -23,7 +30,8 @@ header h1{
     font-family: "Passion One", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 11em;
+    font-size: 10vw;
+    font-variant: small-caps;
     color: white;
 
 }
@@ -36,13 +44,13 @@ header p{
 
 }
 
-header a{
+header a, footer a{
     color: white;
     text-decoration: none;
 
 }
 
-header a:hover{
+a:hover{
     text-decoration: underline;
 
 }
@@ -56,47 +64,41 @@ main{
 
 }
 
+main p{
+    padding: 1em 2em;
+    border-radius: 3px;
+
+}
+
 .color{
-    margin: 70px 0px 100px 30px;
+    background-color: white;
     
 }
 
-.color > .text2{
-    margin-top: 70px;
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2em;
 
 }
 
-#image-1{
+.imagem{
+    background: right center no-repeat fixed ;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.788);
+
+}
+
+#img01{
     background-image: url(pacote-d012/imagens/background001.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 70px 0px 100px 30px;
 
 }
 
-#image-1 > p{
-    display: inline-block;
-    padding: 10px 0px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.274);
-
-}
-
-#image2{
+#img02{
     background-image: url(pacote-d012/imagens/background002.jpg);
-    background-position: right center;
-    background-attachment: fixed;
-    padding: 70px 0px 100px 30px;
-
-}
-
-#image2 > p{
-    display: inline-block;
-    padding: 10px 0px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.473);
-
 }
 
 footer{
@@ -110,16 +112,5 @@ footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     text-align: center;
-
-}
-
-footer a{
-    text-decoration: none;
-    color: white;
-
-}
-
-footer a:hover{
-    text-decoration: underline;
 
 }
