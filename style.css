@@ -81,6 +81,7 @@ main p{
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0, 0, 0, 0.5);
     margin: 2em;
+    min-width: 300px;
 
 }
 
